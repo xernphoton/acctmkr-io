@@ -14,6 +14,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
     return false;
 };
 
+var username = getUrlParameter("username");
 var github = getUrlParameter("github");
 var twitter = getUrlParameter("twitter");
 var facebook = getUrlParameter("facebook");
@@ -21,6 +22,8 @@ var instagram = getUrlParameter("instagram");
 var reddit = getUrlParameter("reddit");
 var youtube = getUrlParameter("youtube");
 var twitch = getUrlParameter("twitch");
+// username
+document.getElementById("floatingInputValue").value = username;
 // github
 if (github == "available") {
     document.getElementById("github").classList.remove("btn-primary");
